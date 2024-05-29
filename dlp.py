@@ -138,12 +138,14 @@ class DLP:
         if not self.analyzer:
             return "error, presidio no ha sido inicializado"
 
-        results = self.analyzer.analyze(text=text, language="es")
+        rules = self.db.get_rules_network(origin_ip)
+        entities = [rule["entity"] for rule in rules]
+
+        results = self.analyzer.analyze(text=text, language="es", entities=entities)
         print("-" * 25 + " Presidio RESULTS " + "-" * 25)
         pprint(results)
 
         # Rules check
-        rules = self.db.get_rules()
         rules_matched = []
 
         # Create a dictionary to save values needed for redaction

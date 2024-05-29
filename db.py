@@ -62,11 +62,15 @@ class Database:
         )
         return result
 
-    def get_rules_network(self):
+    def get_rules_network(self, origin_ip: str):
         result = self.execute(
-            """select r.id, r.codigo, r.description, cet.name as entity, r.level, r.confidence_level, r.hits_lower, r.hits_upper, r.action  from rules r
+            """select r.id, r.codigo, cet.name as entity, r.confidence_level, r.hits_lower, r.hits_upper, r.action
+            from rules r
             inner join custom_entity_types cet on r.entity_id = cet.id
-            where r.status = true"""
+            inner join groups_rules gr on gr.rule_id = r.id
+            inner join networks n on n.id = gr.network_id
+            where r.status = true and %s <<= n.subnet::inet""",
+            (origin_ip),
         )
         return result
 
