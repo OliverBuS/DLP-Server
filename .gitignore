@@ -1,0 +1,6 @@
+.old
+.venv
+chatpy
+__pycache__
+
+extra_entities.py
