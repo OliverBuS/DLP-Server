@@ -100,18 +100,15 @@ class DLP:
         for rule in rules:
             result_matched = []
             for result in results:
-                if (
-                    rule["entity"] == result.entity_type
-                    and rule["confidence_level"] <= result.score
-                ):
+                if rule["entity"] == result.entity_type and rule["confidence_level"] <= result.score:
                     data = text[result.start : result.end]
                     result_matched.append({**result.to_dict(), "data": data})
-                    if rule["action"] == Action.REDACT:
-                        entity_dict[data] = result.entity_type
-
                     action = Action.priority(rule["action"], action)
 
-            if result_matched:
+            if len(result_matched) >= rule["hits_lower"] and len(result_matched) <= rule["hits_upper"]:
+                for result in result_matched:
+                    if rule["action"] == Action.REDACT:
+                        entity_dict[result["data"]] = result["entity_type"]
                 rules_matched.append({"matches": result_matched, "rule": rule})
 
         print("-" * 25 + " HISTORY RESULTS " + "-" * 25)
@@ -157,18 +154,15 @@ class DLP:
         for rule in rules:
             result_matched = []
             for result in results:
-                if (
-                    rule["entity"] == result.entity_type
-                    and rule["confidence_level"] <= result.score
-                ):
+                if rule["entity"] == result.entity_type and rule["confidence_level"] <= result.score:
                     data = text[result.start : result.end]
                     result_matched.append({**result.to_dict(), "data": data})
-                    if rule["action"] == Action.REDACT:
-                        entity_dict[data] = result.entity_type
-
                     action = Action.priority(rule["action"], action)
 
-            if result_matched:
+            if len(result_matched) >= rule["hits_lower"] and len(result_matched) <= rule["hits_upper"]:
+                for result in result_matched:
+                    if rule["action"] == Action.REDACT:
+                        entity_dict[result["data"]] = result["entity_type"]
                 rules_matched.append({"matches": result_matched, "rule": rule})
 
         print("-" * 25 + " HISTORY RESULTS " + "-" * 25)
@@ -184,10 +178,7 @@ class DLP:
 
         return entity_dict
 
-    def anonymize(
-        self, text: str, results: Union[list[RecognizerResult], dict[str, str]]
-    ) -> EngineResult:
-
+    def anonymize(self, text: str, results: Union[list[RecognizerResult], dict[str, str]]) -> EngineResult:
         redacted_text = text
         if isinstance(results, dict):
             for word, redaction in results.items():
