@@ -1,4 +1,6 @@
+from operator import itemgetter, le
 from pprint import pprint
+from re import L
 from typing import Literal, Union
 
 from presidio_analyzer import (
@@ -10,7 +12,7 @@ from presidio_analyzer import (
 from presidio_analyzer.nlp_engine import NlpEngineProvider
 from presidio_anonymizer import AnonymizerEngine, EngineResult
 
-from db import Database
+from db import Database, HistoryEntry
 
 LANGUAGES_CONFIG_FILE = "./languages-config.yml"
 provider = NlpEngineProvider(conf_file=LANGUAGES_CONFIG_FILE)
@@ -29,6 +31,22 @@ class Action:
         for priority_action in priority:
             if priority_action in actions:
                 return priority_action
+
+        return "Nothing"
+
+
+class Level:
+    NOTHING = "Nothing"
+    LOW = "Low"
+    MEDIUM = "Medium"
+    REDACT = "Redact"
+
+    def priority(action1, action2) -> Literal["High", "Medium", "Low", "Nothing"]:
+        levels = [action1, action2]
+        priority = ["High", "Medium", "Low", "Nothing"]
+        for level_pripority in priority:
+            if level_pripority in levels:
+                return level_pripority
 
         return "Nothing"
 
@@ -56,8 +74,13 @@ class DLP:
                 )
                 for pattern in patterns_db_result
             ]
+            # map the results to a list of strings
             deny_list = db.get_custom_deny_list(entity_type_id)
+            deny_list = [item["value"] for item in deny_list]
             context_words = db.get_custom_context_words(entity_type_id)
+            context_words = [item["word"] for item in context_words]
+            print("Deny List: ", deny_list)
+            print("Context Words: ", context_words)
 
             recognizer = PatternRecognizer(
                 supported_entity=entity_type_name,
@@ -95,6 +118,8 @@ class DLP:
         entity_dict = {}
         # Create a variable to indicate the action to be taken
         action = Literal["Block", "Redact", "Alert", "Nothing"]
+        # Create a variable to indicate the level of the action
+        level = Level.NOTHING
         # For each rule recollect all the results that match the rule
         # For this the result must have a high enough confidence level
         for rule in rules:
@@ -104,6 +129,7 @@ class DLP:
                     data = text[result.start : result.end]
                     result_matched.append({**result.to_dict(), "data": data})
                     action = Action.priority(rule["action"], action)
+                    level = Level.priority(rule["level"], level)
 
             if len(result_matched) >= rule["hits_lower"] and len(result_matched) <= rule["hits_upper"]:
                 for result in result_matched:
@@ -121,6 +147,8 @@ class DLP:
         pprint(history_results)
         print("-" * 25 + " Action" + "-" * 25)
         print(action)
+        print("-" * 25 + " Level" + "-" * 25)
+        print(level)
 
         return entity_dict
 
@@ -129,13 +157,14 @@ class DLP:
         text: str,
         origin_ip: str = "127.0.0.1",
         destination_ip: str = "127.0.0.1",
-        file_name: str = "Text",
-        file_metadata: str = "",
+        file_name: str = False,
+        metadata: str = "",
     ) -> list[RecognizerResult]:
         if not self.analyzer:
             return "error, presidio no ha sido inicializado"
 
-        rules = self.db.get_rules_network(origin_ip)
+        # rules = self.db.get_rules_network(origin_ip)
+        rules = self.db.get_rules()
         entities = [rule["entity"] for rule in rules]
 
         results = self.analyzer.analyze(text=text, language="es", entities=entities)
@@ -148,7 +177,9 @@ class DLP:
         # Create a dictionary to save values needed for redaction
         entity_dict = {}
         # Create a variable to indicate the action to be taken
-        action = Literal["Block", "Redact", "Alert", "Nothing"]
+        action = Action.NOTHING
+        # Create a variable to indicate the level of the action
+        level = Level.NOTHING
         # For each rule recollect all the results that match the rule
         # For this the result must have a high enough confidence level
         for rule in rules:
@@ -158,6 +189,7 @@ class DLP:
                     data = text[result.start : result.end]
                     result_matched.append({**result.to_dict(), "data": data})
                     action = Action.priority(rule["action"], action)
+                    level = Level.priority(rule["level"], level)
 
             if len(result_matched) >= rule["hits_lower"] and len(result_matched) <= rule["hits_upper"]:
                 for result in result_matched:
@@ -175,6 +207,28 @@ class DLP:
         pprint(history_results)
         print("-" * 25 + " Action" + "-" * 25)
         print(action)
+        print("-" * 25 + " Level" + "-" * 25)
+        print(level)
+
+        if len(rules_matched) == 0:
+            print("-" * 25 + "Final Result" + "-" * 25)
+            print("No rules matched")
+            return entity_dict
+
+        history = HistoryEntry(
+            origin=origin_ip,
+            destination=destination_ip,
+            sensitive_data=str(entity_dict),
+            results=rules_matched,
+            level=level,
+            action=action,
+            text=text,
+            text_redacted=redacted_text,
+            file=file_name,
+            metadata=metadata,
+        )
+
+        history.insert(db=self.db)
 
         return entity_dict
 
@@ -195,7 +249,7 @@ dlp = DLP(db=db)
 def test(
     text,
 ):
-    results = dlp.analyze(text=text, redact_dict=True)
+    results = dlp.analyze_network(text=text)
     print("-" * 25 + " RESULTS " + "-" * 25)
     pprint(results)
     anonymazed_results = dlp.anonymize(text=text, results=results)

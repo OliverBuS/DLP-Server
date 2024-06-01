@@ -1,3 +1,5 @@
+import json
+
 import psycopg2
 import psycopg2.extras
 from presidio_analyzer import Pattern
@@ -6,9 +8,7 @@ from presidio_analyzer import Pattern
 class Database:
     def __init__(self, host, database, user, password):
         try:
-            self.conn = psycopg2.connect(
-                host=host, database=database, user=user, password=password
-            )
+            self.conn = psycopg2.connect(host=host, database=database, user=user, password=password)
             print(f"Conectado a la base de datos {database} en {host}")
             self.cursor = self.conn.cursor(cursor_factory=psycopg2.extras.DictCursor)
         except (Exception, psycopg2.DatabaseError) as e:
@@ -18,9 +18,16 @@ class Database:
     def execute(self, query, *args):
         try:
             self.cursor.execute(query, args)
-            result = self.cursor.fetchall()
-            result = [dict(row) for row in result]
-            return result
+            # Check for results before fetching
+            if query.strip().upper().startswith("SELECT"):
+                # If the query is a SELECT statement
+                result = self.cursor.fetchall()
+                result = [dict(row) for row in result]
+                return result
+            else:
+                # If the query is an INSERT, UPDATE, or DELETE statement
+                self.conn.commit()
+                return None
         except (Exception, psycopg2.DatabaseError) as e:
             self.close()
             print("Error: ", str(e), "\nEn query: ", query)
@@ -74,5 +81,43 @@ class Database:
         )
         return result
 
+    def save_results_to_history(self, results):
+        pass
+
     def close(self):
         self.conn.close()
+
+
+class HistoryEntry:
+    def __init__(
+        self, origin, destination, sensitive_data, results, level, action, text, text_redacted, file, metadata=None
+    ):
+        self.origin = origin
+        self.destination = destination
+        self.sensitive_data = sensitive_data
+        self.results = results
+        self.level = level
+        self.action = action
+        self.text = text
+        self.text_redacted = text_redacted
+        self.file = file
+        self.metadata = metadata
+
+    def insert(self, db: Database):
+        query = """
+            INSERT INTO history (origin, destination, sensitive_data, results, level, action, text, text_redacted, file, metadata)
+            VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+        """
+        values = (
+            self.origin,
+            self.destination,
+            self.sensitive_data,
+            json.dumps(self.results),
+            self.level,
+            self.action,
+            self.text,
+            self.text_redacted,
+            self.file,
+            json.dumps(self.metadata) if self.metadata else None,
+        )
+        db.execute(query, *values)
