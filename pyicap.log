@@ -1,0 +1,649 @@
+2024-07-15 13:52:24,560 - presidio-analyzer - INFO - Created NLP engine: spacy. Loaded models: ['es']
+2024-07-15 13:52:24,560 - presidio-analyzer - INFO - registry not provided, creating default.
+2024-07-15 13:52:24,560 - presidio-analyzer - INFO - Loaded recognizer: EsNifRecognizer
+2024-07-15 13:52:24,560 - presidio-analyzer - INFO - Loaded recognizer: CreditCardRecognizer
+2024-07-15 13:52:24,560 - presidio-analyzer - INFO - Loaded recognizer: CryptoRecognizer
+2024-07-15 13:52:24,561 - presidio-analyzer - INFO - Loaded recognizer: DateRecognizer
+2024-07-15 13:52:24,561 - presidio-analyzer - INFO - Loaded recognizer: EmailRecognizer
+2024-07-15 13:52:24,561 - presidio-analyzer - INFO - Loaded recognizer: IbanRecognizer
+2024-07-15 13:52:24,561 - presidio-analyzer - INFO - Loaded recognizer: IpRecognizer
+2024-07-15 13:52:24,561 - presidio-analyzer - INFO - Loaded recognizer: MedicalLicenseRecognizer
+2024-07-15 13:52:24,561 - presidio-analyzer - INFO - Loaded recognizer: PhoneRecognizer
+2024-07-15 13:52:24,561 - presidio-analyzer - INFO - Loaded recognizer: UrlRecognizer
+2024-07-15 13:52:24,561 - presidio-analyzer - INFO - Loaded recognizer: SpacyRecognizer
+2024-07-15 13:52:24,563 - presidio-analyzer - INFO - Loaded recognizer: PatternRecognizer
+2024-07-15 13:52:24,564 - presidio-analyzer - INFO - Loaded recognizer: PatternRecognizer
+2024-07-15 13:52:24,565 - presidio-analyzer - INFO - Loaded recognizer: PatternRecognizer
+2024-07-15 13:54:03,881 - root - INFO - Text analyzed:
+2024-07-15 13:54:03,882 - root - INFO - 40
+2024-07-15 13:54:03,883 - root - INFO - Received file: None, with content: 40 from 127.0.0.1 to 127.0.0.1
+2024-07-15 13:54:03,897 - root - INFO - Result:
+2024-07-15 13:54:03,897 - root - INFO - Blocked: False
+2024-07-15 13:54:03,897 - root - INFO - Message: No rules matched
+2024-07-15 13:54:03,897 - root - INFO - Censor dict: {}
+2024-07-15 13:54:03,906 - root - INFO - Text analyzed:
+2024-07-15 13:54:03,906 - root - INFO - 42["join","oliver"]
+2024-07-15 13:54:03,906 - root - INFO - Received file: None, with content: 42["join","oliver"] from 127.0.0.1 to 127.0.0.1
+2024-07-15 13:54:03,914 - root - INFO - Result:
+2024-07-15 13:54:03,914 - root - INFO - Blocked: False
+2024-07-15 13:54:03,914 - root - INFO - Message: No rules matched
+2024-07-15 13:54:03,914 - root - INFO - Censor dict: {}
+2024-07-15 13:54:08,744 - root - INFO - Text analyzed:
+2024-07-15 13:54:08,744 - root - INFO - 42["message","holaaa"]
+2024-07-15 13:54:08,744 - root - INFO - Received file: None, with content: 42["message","holaaa"] from 127.0.0.1 to 127.0.0.1
+2024-07-15 13:54:08,751 - root - INFO - Result:
+2024-07-15 13:54:08,752 - root - INFO - Blocked: False
+2024-07-15 13:54:08,752 - root - INFO - Message: No rules matched
+2024-07-15 13:54:08,752 - root - INFO - Censor dict: {}
+2024-07-15 13:54:27,164 - root - INFO - Text analyzed:
+2024-07-15 13:54:27,164 - root - INFO - 3
+2024-07-15 13:54:27,164 - root - INFO - Received file: None, with content: 3 from 127.0.0.1 to 127.0.0.1
+2024-07-15 13:54:27,171 - root - INFO - Result:
+2024-07-15 13:54:27,171 - root - INFO - Blocked: False
+2024-07-15 13:54:27,171 - root - INFO - Message: No rules matched
+2024-07-15 13:54:27,171 - root - INFO - Censor dict: {}
+2024-07-15 13:54:43,560 - root - INFO - Text analyzed:
+2024-07-15 13:54:43,560 - root - INFO - 42["message","Mi dni es 72175757"]
+2024-07-15 13:54:43,560 - root - INFO - Received file: None, with content: 42["message","Mi dni es 72175757"] from 127.0.0.1 to 127.0.0.1
+2024-07-15 13:54:43,571 - root - INFO - Result:
+2024-07-15 13:54:43,571 - root - INFO - Blocked: False
+2024-07-15 13:54:43,571 - root - INFO - Message: Content blocked due to policy violation
+2024-07-15 13:54:43,571 - root - INFO - Censor dict: {'72175757': 'DNI'}
+2024-07-15 13:54:43,571 - root - INFO - Modified request
+2024-07-15 13:54:52,189 - root - INFO - Text analyzed:
+2024-07-15 13:54:52,189 - root - INFO - 3
+2024-07-15 13:54:52,189 - root - INFO - Received file: None, with content: 3 from 127.0.0.1 to 127.0.0.1
+2024-07-15 13:54:52,196 - root - INFO - Result:
+2024-07-15 13:54:52,196 - root - INFO - Blocked: False
+2024-07-15 13:54:52,196 - root - INFO - Message: No rules matched
+2024-07-15 13:54:52,196 - root - INFO - Censor dict: {}
+2024-07-15 13:55:17,205 - root - INFO - Text analyzed:
+2024-07-15 13:55:17,206 - root - INFO - 3
+2024-07-15 13:55:17,206 - root - INFO - Received file: None, with content: 3 from 127.0.0.1 to 127.0.0.1
+2024-07-15 13:55:17,213 - root - INFO - Result:
+2024-07-15 13:55:17,213 - root - INFO - Blocked: False
+2024-07-15 13:55:17,213 - root - INFO - Message: No rules matched
+2024-07-15 13:55:17,213 - root - INFO - Censor dict: {}
+2024-07-15 13:55:42,227 - root - INFO - Text analyzed:
+2024-07-15 13:55:42,228 - root - INFO - 3
+2024-07-15 13:55:42,228 - root - INFO - Received file: None, with content: 3 from 127.0.0.1 to 127.0.0.1
+2024-07-15 13:55:42,234 - root - INFO - Result:
+2024-07-15 13:55:42,235 - root - INFO - Blocked: False
+2024-07-15 13:55:42,235 - root - INFO - Message: No rules matched
+2024-07-15 13:55:42,235 - root - INFO - Censor dict: {}
+2024-07-15 13:56:07,261 - root - INFO - Text analyzed:
+2024-07-15 13:56:07,261 - root - INFO - 3
+2024-07-15 13:56:07,261 - root - INFO - Received file: None, with content: 3 from 127.0.0.1 to 127.0.0.1
+2024-07-15 13:56:07,267 - root - INFO - Result:
+2024-07-15 13:56:07,268 - root - INFO - Blocked: False
+2024-07-15 13:56:07,268 - root - INFO - Message: No rules matched
+2024-07-15 13:56:07,268 - root - INFO - Censor dict: {}
+2024-07-15 13:56:32,295 - root - INFO - Text analyzed:
+2024-07-15 13:56:32,295 - root - INFO - 3
+2024-07-15 13:56:32,295 - root - INFO - Received file: None, with content: 3 from 127.0.0.1 to 127.0.0.1
+2024-07-15 13:56:32,302 - root - INFO - Result:
+2024-07-15 13:56:32,302 - root - INFO - Blocked: False
+2024-07-15 13:56:32,302 - root - INFO - Message: No rules matched
+2024-07-15 13:56:32,302 - root - INFO - Censor dict: {}
+2024-07-15 13:56:57,324 - root - INFO - Text analyzed:
+2024-07-15 13:56:57,324 - root - INFO - 3
+2024-07-15 13:56:57,324 - root - INFO - Received file: None, with content: 3 from 127.0.0.1 to 127.0.0.1
+2024-07-15 13:56:57,331 - root - INFO - Result:
+2024-07-15 13:56:57,331 - root - INFO - Blocked: False
+2024-07-15 13:56:57,331 - root - INFO - Message: No rules matched
+2024-07-15 13:56:57,331 - root - INFO - Censor dict: {}
+2024-07-15 13:57:22,350 - root - INFO - Text analyzed:
+2024-07-15 13:57:22,350 - root - INFO - 3
+2024-07-15 13:57:22,350 - root - INFO - Received file: None, with content: 3 from 127.0.0.1 to 127.0.0.1
+2024-07-15 13:57:22,357 - root - INFO - Result:
+2024-07-15 13:57:22,357 - root - INFO - Blocked: False
+2024-07-15 13:57:22,357 - root - INFO - Message: No rules matched
+2024-07-15 13:57:22,357 - root - INFO - Censor dict: {}
+2024-07-15 13:57:47,384 - root - INFO - Text analyzed:
+2024-07-15 13:57:47,384 - root - INFO - 3
+2024-07-15 13:57:47,384 - root - INFO - Received file: None, with content: 3 from 127.0.0.1 to 127.0.0.1
+2024-07-15 13:57:47,391 - root - INFO - Result:
+2024-07-15 13:57:47,391 - root - INFO - Blocked: False
+2024-07-15 13:57:47,391 - root - INFO - Message: No rules matched
+2024-07-15 13:57:47,391 - root - INFO - Censor dict: {}
+2024-07-15 13:58:12,402 - root - INFO - Text analyzed:
+2024-07-15 13:58:12,402 - root - INFO - 3
+2024-07-15 13:58:12,402 - root - INFO - Received file: None, with content: 3 from 127.0.0.1 to 127.0.0.1
+2024-07-15 13:58:12,408 - root - INFO - Result:
+2024-07-15 13:58:12,408 - root - INFO - Blocked: False
+2024-07-15 13:58:12,409 - root - INFO - Message: No rules matched
+2024-07-15 13:58:12,409 - root - INFO - Censor dict: {}
+2024-07-15 13:58:37,002 - root - INFO - Text analyzed:
+2024-07-15 13:58:37,003 - root - INFO - Desarrollo e implementación 
+de un sistema DLP de red 
+enfocado al contexto de 
+protección de datos en el 
+Perú
+Bustamante Sanchez, Oliver Alexander
+Bravo Acuache, Angel Rolando
+Asesor: Galdós Vadillo, José Miguel
+Índice
+1. Motivación
+2. Objetivos
+3. Metodología y pasos
+4. Logros y avances
+5. Conclusiones y recomendaciones
+Desarrollo e implementación de un sistema DLP de red enfocado al 
+contexto de protección de datos en el Perú
+2
+Motivación
+Desarrollo e implementación de un sistema DLP de red enfocado al 
+contexto de protección de datos en el Perú
+3
+Importancia y protección de datos
+Composición de la Valoración de Mercado 
+de S&P 500 [1]
+Reporte de Seguridad Latinoamérica 2022 
+por ESET [2]
+Desarrollo e implementación de un sistema DLP de red enfocado al 
+contexto de protección de datos en el Perú
+4
+Retos legales y regulaciones
+Manual de Protección de 
+Datos Personales de la 
+Defensoría del Pueblo [3]
+Reporte de Coste de Brecha 
+de Datos de IBM 2023 [4]
+Regulaciones destacables de 
+datos personales y sensibles [5]
+Desarrollo e implementación de un sistema DLP de red enfocado al 
+contexto de protección de datos en el Perú
+5
+Impacto Social
+la 
+personal 
+Salvaguarda 
+información 
+y 
+sensible de los ciudadanos. 
+Protegiendo el derecho a la 
+autonomía informativa
+Fomenta  la  confianza  en 
+las 
+al 
+instituciones 
+demostrar  un  compromiso 
+con la protección de datos.
+de 
+Ayuda  a  prevenir  el  uso 
+datos 
+indebido 
+personales 
+para 
+delictivas 
+actividades 
+como 
+o 
+extorsiones.
+fraudes 
+Desarrollo e implementación de un sistema DLP de red enfocado al 
+contexto de protección de datos en el Perú
+6
+Objetivos
+Desarrollo e implementación de un sistema DLP de red enfocado al 
+contexto de protección de datos en el Perú
+7
+Objetivo general
+Desarrollar un sistema de prevención de fuga 
+de información para datos en tránsito que usen 
+el protocolo HTTP/S. Capaz de monitorear el 
+tráfico de la red para identificar, clasificar y 
+registrar información sensible.
+Desarrollo e implementación de un sistema DLP de red enfocado al 
+contexto de protección de datos en el Perú
+8
+Objetivos específicos: Requerimientos
+Detección y clasificación de 
+distintos tipos de datos 
+personales y sensibles en base 
+a las necesidades de la 
+organización.
+Funciones de alerta y registro 
+de eventos que permitan 
+optimizar las respuestas ante 
+incidentes y apoyar en la 
+detección de fugas de 
+información.
+Realizar la adaptación o 
+bloqueo de datos sensibles no 
+autorizados en la red como 
+medida de prevención ante una 
+fuga de información.
+Desarrollo e implementación de un sistema DLP de red enfocado al 
+contexto de protección de datos en el Perú
+9
+Metodología
+Desarrollo e implementación de un sistema DLP de red enfocado al 
+contexto de protección de datos en el Perú
+10
+Design Thinking
+Desarrollo e implementación de un sistema DLP de red enfocado al 
+contexto de protección de datos en el Perú
+11
+Concepto de solución
+La solución a desarrollar 
+consiste de:
+• Base de datos
+• Módulo de detección
+• Módulo de redacción 
+• Servidor de adaptación de 
+contenidos
+• API de Gestión
+• Frontend de Gestión
+Desarrollo e implementación de un sistema DLP de red enfocado al 
+contexto de protección de datos en el Perú
+12
+Diseño de base de datos
+PostgreSQL
+● Relacional
+● Open Source
+● Soporte JSON
+Almacena
+• Entidades
+• Grupos de red
+• Reglas
+• Historial de incidentes
+• Usuarios y permisos
+Desarrollo e implementación de un sistema DLP de red enfocado al 
+contexto de protección de datos en el Perú
+13
+Diseño de Módulos
+Módulo de
+Redacción
+Documento 
+Redactado
+Características
+● Hecho en Python
+● Conexión a base 
+de datos
+● Almacenamiento 
+de toda 
+incidencia
+Hola mi DNI es <dni> y mi 
+celular es <celular>
+Módulo de Detección
+Diccionario de 
+valores a redactar
+{ ‘92005921’: ‘<celular>’, 
+‘8128364’: ‘<dni>’}
+Hola mi DNI 
+es 8128364 y 
+mi celular es 
+92005921
+Información en 
+tránsito
+●
+●
+Texto sin formato
+Documentos: 
+.txt, .pdf, .doc y .docx
+Desarrollo e implementación de un sistema DLP de red enfocado al 
+contexto de protección de datos en el Perú
+14
+Servidor de Adaptación de contenido
+Paquete de red
+1
+6
+Error 403 : Forbidden
+Características
+Módulo de Detección
+Paquete de red
+1
+4
+Módulo de Redacción
+2
+diccionario
+3
+5
+4
+Módulo de Detección
+2
+‘Block’
+3
+● Protocolo ICAP
+● Realiza el 
+bloqueo y 
+modificación de 
+la información
+● Hecho en Python 
+● Basado en 
+proyecto Open 
+Source pyicap
+Desarrollo e implementación de un sistema DLP de red enfocado al 
+contexto de protección de datos en el Perú
+15
+Aplicación Web de Gestión
+Enfocado en:
+● CRUD
+○ Usuarios
+○ Reglas
+○ Entidades
+○ Grupos de red
+● Dashboard de 
+incidentes
+● Autenticación y 
+autorización de 
+usuarios
+Frontend
+Backend
+Vite
+Kotlin
+Desarrollo e implementación de un sistema DLP de red enfocado al 
+contexto de protección de datos en el Perú
+16
+Logros y avances
+Desarrollo e implementación de un sistema DLP de red enfocado al 
+contexto de protección de datos en el Perú
+17
+Implementación en Testbed
+Requiere:
+● Servidor Proxy: 
+Squid Proxy
+● Cliente y servidor 
+HTTP: Aplicación 
+de chat simple 
+hecha en Python
+Desarrollo e implementación de un sistema DLP de red enfocado al 
+contexto de protección de datos en el Perú
+18
+Implementación de Aplicación Web
+Funcionalidades
+● Flujo de CRUD
+○ Usuarios
+○ Grupos de Red
+○ Reglas
+○ Entidades
+● Historial de incidentes
+● Emisión de alertas
+Seguridad
+● Implementa JWT para la 
+sesión de usuarios
+Desarrollo e implementación de un sistema DLP de red enfocado al 
+contexto de protección de datos en el Perú
+19
+Registro de Alertas
+Funcionalidades
+● Accesibilidad por Rol
+● Visualizar
+○ Importancia
+○ Accion tomada
+○ Datos filtrados
+○ Fecha y ora
+○ IPs involucradas
+Desarrollo e implementación de un sistema DLP de red enfocado al 
+contexto de protección de datos en el Perú
+20
+Redacción de Datos Sensibles
+Documento pdf 
+enviado
+Documento pdf 
+recibido
+El Sistema es capaz de 
+Redactar:
+● Documentos
+○ .txt
+○ .pdf
+○ .doc
+○ .docx
+● Texto sin formato
+Desarrollo e implementación de un sistema DLP de red enfocado al 
+contexto de protección de datos en el Perú
+21
+Bloqueo de comunicaciones
+Mensaje enviado
+Mensaje Bloqueado
+● El Sistema es capaz de 
+de interrumpir el envío 
+de información privada
+Desarrollo e implementación de un sistema DLP de red enfocado al 
+contexto de protección de datos en el Perú
+22
+Conclusiones y recomendaciones
+Desarrollo e implementación de un sistema DLP de red enfocado al 
+contexto de protección de datos en el Perú
+23
+Conclusiones
+✓ Se logró diseñar un sistema de prevención de fuga de datos para datos en tránsito 
+que usen el protocolo HTTP/S. Este sistema emplea servidores Web, ICAP y Proxy, y 
+su diseño permite integrarlo con otros componentes de seguridad empresarial.
+✓ Se implementó un servidor ICAP en base a un framework open source, 
+extendiendo sus funcionalidades base para permitir la edición de archivos Word y 
+PDF, logrando la modificación de cargas útiles no solo en texto, sino también dentro 
+de estos archivos. 
+✓ Se realizaron pruebas de bloqueo de tráfico dentro del sistema para simular 
+acciones preventivas frente a fugas de datos. 
+Desarrollo e implementación de un sistema DLP de red enfocado al 
+contexto de protección de datos en el Perú
+24
+Recomendaciones
+➢ Para entornos empresariales, se recomienda continuar la implementación del 
+servidor ICAP basado en el framework elegido, con el objetivo de integrar la 
+búsqueda de texto en imágenes y añadir soporte para el análisis y la redacción de 
+un mayor número de tipos de archivos. 
+➢ Se sugiere realizar pruebas de escalamiento horizontal y de rendimiento bajo 
+alta concurrencia de usuarios. 
+➢ Es posible reestructurar el diseño de red con los componentes base para soportar 
+arquitecturas que utilicen nube privada, pública o híbrida, para cubrir casuísticas 
+como organizaciones con trabajadores en modalidad remota.
+Desarrollo e implementación de un sistema DLP de red enfocado al 
+contexto de protección de datos en el Perú
+25
+Referencias
+[1] “Intangible Asset Market Value Study”, Ocean Tomo. Consultado: el 31 de octubre de 2023. [En línea]. 
+Disponible en: https://oceantomo.com/intangible-asset-market-value-study/
+[2] ESET, “Security Report Latinoamérica 2022”, 2022. Consultado: el 31 de octubre de 2023. [En línea]. 
+Disponible en: https://web-assets.esetstatic.com/wls/2022/07/ESET-security-report-LATAM-2022.pdf
+[3] Defensoría del pueblo, “Manual de Protección de Datos Personales”. Consultado: el 31 de octubre de 
+2023. [En línea]. Disponible en: 
+https://www.defensoria.gob.pe/wp-content/uploads/2019/11/Manual-de-Protecci%C3%B3n-de-Datos-Pers
+onales.pdf
+[4] IBM Security, “Cost of a Data Breach Report 2023”, IBM, jul. 2023.
+[5] E. Kost, “Top 8 Cybersecurity Regulations for Financial Services”, upguard. Consultado: el 2 de noviembre 
+de 2023. [En línea]. Disponible en: 
+https://www.upguard.com/blog/cybersecurity-regulations-financial-industry
+Desarrollo e implementación de un sistema DLP de red enfocado al 
+contexto de protección de datos en el Perú
+26
+
+2024-07-15 13:58:37,003 - root - INFO - Received file: None, with content: Desarrollo e implementación 
+de un sistema DLP de red 
+enfocado al contexto de 
+protección de datos  from 127.0.0.1 to 127.0.0.1
+2024-07-15 13:58:37,165 - presidio-analyzer - WARNING - Entity MISC is not mapped to a Presidio entity, but keeping anyway. Add to `NerModelConfiguration.labels_to_ignore` to remove.
+2024-07-15 13:58:37,165 - presidio-analyzer - WARNING - Entity MISC is not mapped to a Presidio entity, but keeping anyway. Add to `NerModelConfiguration.labels_to_ignore` to remove.
+2024-07-15 13:58:37,165 - presidio-analyzer - WARNING - Entity MISC is not mapped to a Presidio entity, but keeping anyway. Add to `NerModelConfiguration.labels_to_ignore` to remove.
+2024-07-15 13:58:37,165 - presidio-analyzer - WARNING - Entity MISC is not mapped to a Presidio entity, but keeping anyway. Add to `NerModelConfiguration.labels_to_ignore` to remove.
+2024-07-15 13:58:37,165 - presidio-analyzer - WARNING - Entity MISC is not mapped to a Presidio entity, but keeping anyway. Add to `NerModelConfiguration.labels_to_ignore` to remove.
+2024-07-15 13:58:37,165 - presidio-analyzer - WARNING - Entity MISC is not mapped to a Presidio entity, but keeping anyway. Add to `NerModelConfiguration.labels_to_ignore` to remove.
+2024-07-15 13:58:37,165 - presidio-analyzer - WARNING - Entity MISC is not mapped to a Presidio entity, but keeping anyway. Add to `NerModelConfiguration.labels_to_ignore` to remove.
+2024-07-15 13:58:37,165 - presidio-analyzer - WARNING - Entity MISC is not mapped to a Presidio entity, but keeping anyway. Add to `NerModelConfiguration.labels_to_ignore` to remove.
+2024-07-15 13:58:37,165 - presidio-analyzer - WARNING - Entity MISC is not mapped to a Presidio entity, but keeping anyway. Add to `NerModelConfiguration.labels_to_ignore` to remove.
+2024-07-15 13:58:37,165 - presidio-analyzer - WARNING - Entity MISC is not mapped to a Presidio entity, but keeping anyway. Add to `NerModelConfiguration.labels_to_ignore` to remove.
+2024-07-15 13:58:37,165 - presidio-analyzer - WARNING - Entity MISC is not mapped to a Presidio entity, but keeping anyway. Add to `NerModelConfiguration.labels_to_ignore` to remove.
+2024-07-15 13:58:37,165 - presidio-analyzer - WARNING - Entity MISC is not mapped to a Presidio entity, but keeping anyway. Add to `NerModelConfiguration.labels_to_ignore` to remove.
+2024-07-15 13:58:37,165 - presidio-analyzer - WARNING - Entity MISC is not mapped to a Presidio entity, but keeping anyway. Add to `NerModelConfiguration.labels_to_ignore` to remove.
+2024-07-15 13:58:37,165 - presidio-analyzer - WARNING - Entity MISC is not mapped to a Presidio entity, but keeping anyway. Add to `NerModelConfiguration.labels_to_ignore` to remove.
+2024-07-15 13:58:37,165 - presidio-analyzer - WARNING - Entity MISC is not mapped to a Presidio entity, but keeping anyway. Add to `NerModelConfiguration.labels_to_ignore` to remove.
+2024-07-15 13:58:37,165 - presidio-analyzer - WARNING - Entity MISC is not mapped to a Presidio entity, but keeping anyway. Add to `NerModelConfiguration.labels_to_ignore` to remove.
+2024-07-15 13:58:37,165 - presidio-analyzer - WARNING - Entity MISC is not mapped to a Presidio entity, but keeping anyway. Add to `NerModelConfiguration.labels_to_ignore` to remove.
+2024-07-15 13:58:37,165 - presidio-analyzer - WARNING - Entity MISC is not mapped to a Presidio entity, but keeping anyway. Add to `NerModelConfiguration.labels_to_ignore` to remove.
+2024-07-15 13:58:37,166 - presidio-analyzer - WARNING - Entity MISC is not mapped to a Presidio entity, but keeping anyway. Add to `NerModelConfiguration.labels_to_ignore` to remove.
+2024-07-15 13:58:37,166 - presidio-analyzer - WARNING - Entity MISC is not mapped to a Presidio entity, but keeping anyway. Add to `NerModelConfiguration.labels_to_ignore` to remove.
+2024-07-15 13:58:37,166 - presidio-analyzer - WARNING - Entity MISC is not mapped to a Presidio entity, but keeping anyway. Add to `NerModelConfiguration.labels_to_ignore` to remove.
+2024-07-15 13:58:37,166 - presidio-analyzer - WARNING - Entity MISC is not mapped to a Presidio entity, but keeping anyway. Add to `NerModelConfiguration.labels_to_ignore` to remove.
+2024-07-15 13:58:37,166 - presidio-analyzer - WARNING - Entity MISC is not mapped to a Presidio entity, but keeping anyway. Add to `NerModelConfiguration.labels_to_ignore` to remove.
+2024-07-15 13:58:37,166 - presidio-analyzer - WARNING - Entity MISC is not mapped to a Presidio entity, but keeping anyway. Add to `NerModelConfiguration.labels_to_ignore` to remove.
+2024-07-15 13:58:37,166 - presidio-analyzer - WARNING - Entity MISC is not mapped to a Presidio entity, but keeping anyway. Add to `NerModelConfiguration.labels_to_ignore` to remove.
+2024-07-15 13:58:37,166 - presidio-analyzer - WARNING - Entity MISC is not mapped to a Presidio entity, but keeping anyway. Add to `NerModelConfiguration.labels_to_ignore` to remove.
+2024-07-15 13:58:37,166 - presidio-analyzer - WARNING - Entity MISC is not mapped to a Presidio entity, but keeping anyway. Add to `NerModelConfiguration.labels_to_ignore` to remove.
+2024-07-15 13:58:37,166 - presidio-analyzer - WARNING - Entity MISC is not mapped to a Presidio entity, but keeping anyway. Add to `NerModelConfiguration.labels_to_ignore` to remove.
+2024-07-15 13:58:37,166 - presidio-analyzer - WARNING - Entity MISC is not mapped to a Presidio entity, but keeping anyway. Add to `NerModelConfiguration.labels_to_ignore` to remove.
+2024-07-15 13:58:37,166 - presidio-analyzer - WARNING - Entity MISC is not mapped to a Presidio entity, but keeping anyway. Add to `NerModelConfiguration.labels_to_ignore` to remove.
+2024-07-15 13:58:37,166 - presidio-analyzer - WARNING - Entity MISC is not mapped to a Presidio entity, but keeping anyway. Add to `NerModelConfiguration.labels_to_ignore` to remove.
+2024-07-15 13:58:37,166 - presidio-analyzer - WARNING - Entity MISC is not mapped to a Presidio entity, but keeping anyway. Add to `NerModelConfiguration.labels_to_ignore` to remove.
+2024-07-15 13:58:37,166 - presidio-analyzer - WARNING - Entity MISC is not mapped to a Presidio entity, but keeping anyway. Add to `NerModelConfiguration.labels_to_ignore` to remove.
+2024-07-15 13:58:37,166 - presidio-analyzer - WARNING - Entity MISC is not mapped to a Presidio entity, but keeping anyway. Add to `NerModelConfiguration.labels_to_ignore` to remove.
+2024-07-15 13:58:37,166 - presidio-analyzer - WARNING - Entity MISC is not mapped to a Presidio entity, but keeping anyway. Add to `NerModelConfiguration.labels_to_ignore` to remove.
+2024-07-15 13:58:37,166 - presidio-analyzer - WARNING - Entity MISC is not mapped to a Presidio entity, but keeping anyway. Add to `NerModelConfiguration.labels_to_ignore` to remove.
+2024-07-15 13:58:37,167 - presidio-analyzer - WARNING - Entity MISC is not mapped to a Presidio entity, but keeping anyway. Add to `NerModelConfiguration.labels_to_ignore` to remove.
+2024-07-15 13:58:37,167 - presidio-analyzer - WARNING - Entity MISC is not mapped to a Presidio entity, but keeping anyway. Add to `NerModelConfiguration.labels_to_ignore` to remove.
+2024-07-15 13:58:37,167 - presidio-analyzer - WARNING - Entity MISC is not mapped to a Presidio entity, but keeping anyway. Add to `NerModelConfiguration.labels_to_ignore` to remove.
+2024-07-15 13:58:37,167 - presidio-analyzer - WARNING - Entity MISC is not mapped to a Presidio entity, but keeping anyway. Add to `NerModelConfiguration.labels_to_ignore` to remove.
+2024-07-15 13:58:37,167 - presidio-analyzer - WARNING - Entity MISC is not mapped to a Presidio entity, but keeping anyway. Add to `NerModelConfiguration.labels_to_ignore` to remove.
+2024-07-15 13:58:37,167 - presidio-analyzer - WARNING - Entity MISC is not mapped to a Presidio entity, but keeping anyway. Add to `NerModelConfiguration.labels_to_ignore` to remove.
+2024-07-15 13:58:37,167 - presidio-analyzer - WARNING - Entity MISC is not mapped to a Presidio entity, but keeping anyway. Add to `NerModelConfiguration.labels_to_ignore` to remove.
+2024-07-15 13:58:37,167 - presidio-analyzer - WARNING - Entity MISC is not mapped to a Presidio entity, but keeping anyway. Add to `NerModelConfiguration.labels_to_ignore` to remove.
+2024-07-15 13:58:37,167 - presidio-analyzer - WARNING - Entity MISC is not mapped to a Presidio entity, but keeping anyway. Add to `NerModelConfiguration.labels_to_ignore` to remove.
+2024-07-15 13:58:37,167 - presidio-analyzer - WARNING - Entity MISC is not mapped to a Presidio entity, but keeping anyway. Add to `NerModelConfiguration.labels_to_ignore` to remove.
+2024-07-15 13:58:37,167 - presidio-analyzer - WARNING - Entity MISC is not mapped to a Presidio entity, but keeping anyway. Add to `NerModelConfiguration.labels_to_ignore` to remove.
+2024-07-15 13:58:37,167 - presidio-analyzer - WARNING - Entity MISC is not mapped to a Presidio entity, but keeping anyway. Add to `NerModelConfiguration.labels_to_ignore` to remove.
+2024-07-15 13:58:37,167 - presidio-analyzer - WARNING - Entity MISC is not mapped to a Presidio entity, but keeping anyway. Add to `NerModelConfiguration.labels_to_ignore` to remove.
+2024-07-15 13:58:37,167 - presidio-analyzer - WARNING - Entity MISC is not mapped to a Presidio entity, but keeping anyway. Add to `NerModelConfiguration.labels_to_ignore` to remove.
+2024-07-15 13:58:37,167 - presidio-analyzer - WARNING - Entity MISC is not mapped to a Presidio entity, but keeping anyway. Add to `NerModelConfiguration.labels_to_ignore` to remove.
+2024-07-15 13:58:37,167 - presidio-analyzer - WARNING - Entity MISC is not mapped to a Presidio entity, but keeping anyway. Add to `NerModelConfiguration.labels_to_ignore` to remove.
+2024-07-15 13:58:37,167 - presidio-analyzer - WARNING - Entity MISC is not mapped to a Presidio entity, but keeping anyway. Add to `NerModelConfiguration.labels_to_ignore` to remove.
+2024-07-15 13:58:37,167 - presidio-analyzer - WARNING - Entity MISC is not mapped to a Presidio entity, but keeping anyway. Add to `NerModelConfiguration.labels_to_ignore` to remove.
+2024-07-15 13:58:37,168 - presidio-analyzer - WARNING - Entity MISC is not mapped to a Presidio entity, but keeping anyway. Add to `NerModelConfiguration.labels_to_ignore` to remove.
+2024-07-15 13:58:37,168 - presidio-analyzer - WARNING - Entity MISC is not mapped to a Presidio entity, but keeping anyway. Add to `NerModelConfiguration.labels_to_ignore` to remove.
+2024-07-15 13:58:37,168 - presidio-analyzer - WARNING - Entity MISC is not mapped to a Presidio entity, but keeping anyway. Add to `NerModelConfiguration.labels_to_ignore` to remove.
+2024-07-15 13:58:37,168 - presidio-analyzer - WARNING - Entity MISC is not mapped to a Presidio entity, but keeping anyway. Add to `NerModelConfiguration.labels_to_ignore` to remove.
+2024-07-15 13:58:37,168 - presidio-analyzer - WARNING - Entity MISC is not mapped to a Presidio entity, but keeping anyway. Add to `NerModelConfiguration.labels_to_ignore` to remove.
+2024-07-15 13:58:37,168 - presidio-analyzer - WARNING - Entity MISC is not mapped to a Presidio entity, but keeping anyway. Add to `NerModelConfiguration.labels_to_ignore` to remove.
+2024-07-15 13:58:37,168 - presidio-analyzer - WARNING - Entity MISC is not mapped to a Presidio entity, but keeping anyway. Add to `NerModelConfiguration.labels_to_ignore` to remove.
+2024-07-15 13:58:37,168 - presidio-analyzer - WARNING - Entity MISC is not mapped to a Presidio entity, but keeping anyway. Add to `NerModelConfiguration.labels_to_ignore` to remove.
+2024-07-15 13:58:37,168 - presidio-analyzer - WARNING - Entity MISC is not mapped to a Presidio entity, but keeping anyway. Add to `NerModelConfiguration.labels_to_ignore` to remove.
+2024-07-15 13:58:37,168 - presidio-analyzer - WARNING - Entity MISC is not mapped to a Presidio entity, but keeping anyway. Add to `NerModelConfiguration.labels_to_ignore` to remove.
+2024-07-15 13:58:37,168 - presidio-analyzer - WARNING - Entity MISC is not mapped to a Presidio entity, but keeping anyway. Add to `NerModelConfiguration.labels_to_ignore` to remove.
+2024-07-15 13:58:37,168 - presidio-analyzer - WARNING - Entity MISC is not mapped to a Presidio entity, but keeping anyway. Add to `NerModelConfiguration.labels_to_ignore` to remove.
+2024-07-15 13:58:37,168 - presidio-analyzer - WARNING - Entity MISC is not mapped to a Presidio entity, but keeping anyway. Add to `NerModelConfiguration.labels_to_ignore` to remove.
+2024-07-15 13:58:37,168 - presidio-analyzer - WARNING - Entity MISC is not mapped to a Presidio entity, but keeping anyway. Add to `NerModelConfiguration.labels_to_ignore` to remove.
+2024-07-15 13:58:37,168 - presidio-analyzer - WARNING - Entity MISC is not mapped to a Presidio entity, but keeping anyway. Add to `NerModelConfiguration.labels_to_ignore` to remove.
+2024-07-15 13:58:37,168 - presidio-analyzer - WARNING - Entity MISC is not mapped to a Presidio entity, but keeping anyway. Add to `NerModelConfiguration.labels_to_ignore` to remove.
+2024-07-15 13:58:37,168 - presidio-analyzer - WARNING - Entity MISC is not mapped to a Presidio entity, but keeping anyway. Add to `NerModelConfiguration.labels_to_ignore` to remove.
+2024-07-15 13:58:37,168 - presidio-analyzer - WARNING - Entity MISC is not mapped to a Presidio entity, but keeping anyway. Add to `NerModelConfiguration.labels_to_ignore` to remove.
+2024-07-15 13:58:37,168 - presidio-analyzer - WARNING - Entity MISC is not mapped to a Presidio entity, but keeping anyway. Add to `NerModelConfiguration.labels_to_ignore` to remove.
+2024-07-15 13:58:37,169 - presidio-analyzer - WARNING - Entity MISC is not mapped to a Presidio entity, but keeping anyway. Add to `NerModelConfiguration.labels_to_ignore` to remove.
+2024-07-15 13:58:37,169 - presidio-analyzer - WARNING - Entity MISC is not mapped to a Presidio entity, but keeping anyway. Add to `NerModelConfiguration.labels_to_ignore` to remove.
+2024-07-15 13:58:37,169 - presidio-analyzer - WARNING - Entity MISC is not mapped to a Presidio entity, but keeping anyway. Add to `NerModelConfiguration.labels_to_ignore` to remove.
+2024-07-15 13:58:37,169 - presidio-analyzer - WARNING - Entity MISC is not mapped to a Presidio entity, but keeping anyway. Add to `NerModelConfiguration.labels_to_ignore` to remove.
+2024-07-15 13:58:37,169 - presidio-analyzer - WARNING - Entity MISC is not mapped to a Presidio entity, but keeping anyway. Add to `NerModelConfiguration.labels_to_ignore` to remove.
+2024-07-15 13:58:37,169 - presidio-analyzer - WARNING - Entity MISC is not mapped to a Presidio entity, but keeping anyway. Add to `NerModelConfiguration.labels_to_ignore` to remove.
+2024-07-15 13:58:37,169 - presidio-analyzer - WARNING - Entity MISC is not mapped to a Presidio entity, but keeping anyway. Add to `NerModelConfiguration.labels_to_ignore` to remove.
+2024-07-15 13:58:37,169 - presidio-analyzer - WARNING - Entity MISC is not mapped to a Presidio entity, but keeping anyway. Add to `NerModelConfiguration.labels_to_ignore` to remove.
+2024-07-15 13:58:37,169 - presidio-analyzer - WARNING - Entity MISC is not mapped to a Presidio entity, but keeping anyway. Add to `NerModelConfiguration.labels_to_ignore` to remove.
+2024-07-15 13:58:37,169 - presidio-analyzer - WARNING - Entity MISC is not mapped to a Presidio entity, but keeping anyway. Add to `NerModelConfiguration.labels_to_ignore` to remove.
+2024-07-15 13:58:37,169 - presidio-analyzer - WARNING - Entity MISC is not mapped to a Presidio entity, but keeping anyway. Add to `NerModelConfiguration.labels_to_ignore` to remove.
+2024-07-15 13:58:37,169 - presidio-analyzer - WARNING - Entity MISC is not mapped to a Presidio entity, but keeping anyway. Add to `NerModelConfiguration.labels_to_ignore` to remove.
+2024-07-15 13:58:37,169 - presidio-analyzer - WARNING - Entity MISC is not mapped to a Presidio entity, but keeping anyway. Add to `NerModelConfiguration.labels_to_ignore` to remove.
+2024-07-15 13:58:37,169 - presidio-analyzer - WARNING - Entity MISC is not mapped to a Presidio entity, but keeping anyway. Add to `NerModelConfiguration.labels_to_ignore` to remove.
+2024-07-15 13:58:37,169 - presidio-analyzer - WARNING - Entity MISC is not mapped to a Presidio entity, but keeping anyway. Add to `NerModelConfiguration.labels_to_ignore` to remove.
+2024-07-15 13:58:37,170 - presidio-analyzer - WARNING - Entity MISC is not mapped to a Presidio entity, but keeping anyway. Add to `NerModelConfiguration.labels_to_ignore` to remove.
+2024-07-15 13:58:37,170 - presidio-analyzer - WARNING - Entity MISC is not mapped to a Presidio entity, but keeping anyway. Add to `NerModelConfiguration.labels_to_ignore` to remove.
+2024-07-15 13:58:37,170 - presidio-analyzer - WARNING - Entity MISC is not mapped to a Presidio entity, but keeping anyway. Add to `NerModelConfiguration.labels_to_ignore` to remove.
+2024-07-15 13:58:37,170 - presidio-analyzer - WARNING - Entity MISC is not mapped to a Presidio entity, but keeping anyway. Add to `NerModelConfiguration.labels_to_ignore` to remove.
+2024-07-15 13:58:37,170 - presidio-analyzer - WARNING - Entity MISC is not mapped to a Presidio entity, but keeping anyway. Add to `NerModelConfiguration.labels_to_ignore` to remove.
+2024-07-15 13:58:37,170 - presidio-analyzer - WARNING - Entity MISC is not mapped to a Presidio entity, but keeping anyway. Add to `NerModelConfiguration.labels_to_ignore` to remove.
+2024-07-15 13:58:37,170 - presidio-analyzer - WARNING - Entity MISC is not mapped to a Presidio entity, but keeping anyway. Add to `NerModelConfiguration.labels_to_ignore` to remove.
+2024-07-15 13:58:37,178 - root - INFO - Result:
+2024-07-15 13:58:37,178 - root - INFO - Blocked: False
+2024-07-15 13:58:37,178 - root - INFO - Message: Content blocked due to policy violation
+2024-07-15 13:58:37,178 - root - INFO - Censor dict: {'92005921': 'DNI', '8128364': 'PERU_PHONE', ' 8128364': 'PERU_PHONE'}
+2024-07-15 13:58:37,232 - root - INFO - Modified request
+2024-07-15 13:58:37,256 - root - INFO - Text analyzed:
+2024-07-15 13:58:37,257 - root - INFO - 42["fileUpload",{"filename":"Diapositivas_Presustentacion.pdf","originalName":"Diapositivas_Presustentacion.pdf","mimetype":"application/pdf"}]
+2024-07-15 13:58:37,257 - root - INFO - Received file: None, with content: 42["fileUpload",{"filename":"Diapositivas_Presustentacion.pdf","originalName":"Diapositivas_Presuste from 127.0.0.1 to 127.0.0.1
+2024-07-15 13:58:37,265 - root - INFO - Result:
+2024-07-15 13:58:37,265 - root - INFO - Blocked: False
+2024-07-15 13:58:37,265 - root - INFO - Message: No rules matched
+2024-07-15 13:58:37,265 - root - INFO - Censor dict: {}
+2024-07-15 13:58:37,429 - root - INFO - Text analyzed:
+2024-07-15 13:58:37,429 - root - INFO - 3
+2024-07-15 13:58:37,429 - root - INFO - Received file: None, with content: 3 from 127.0.0.1 to 127.0.0.1
+2024-07-15 13:58:37,435 - root - INFO - Result:
+2024-07-15 13:58:37,436 - root - INFO - Blocked: False
+2024-07-15 13:58:37,436 - root - INFO - Message: No rules matched
+2024-07-15 13:58:37,436 - root - INFO - Censor dict: {}
+2024-07-15 13:59:02,452 - root - INFO - Text analyzed:
+2024-07-15 13:59:02,452 - root - INFO - 3
+2024-07-15 13:59:02,452 - root - INFO - Received file: None, with content: 3 from 127.0.0.1 to 127.0.0.1
+2024-07-15 13:59:02,459 - root - INFO - Result:
+2024-07-15 13:59:02,459 - root - INFO - Blocked: False
+2024-07-15 13:59:02,459 - root - INFO - Message: No rules matched
+2024-07-15 13:59:02,459 - root - INFO - Censor dict: {}
+2024-07-15 13:59:27,473 - root - INFO - Text analyzed:
+2024-07-15 13:59:27,473 - root - INFO - 3
+2024-07-15 13:59:27,473 - root - INFO - Received file: None, with content: 3 from 127.0.0.1 to 127.0.0.1
+2024-07-15 13:59:27,480 - root - INFO - Result:
+2024-07-15 13:59:27,480 - root - INFO - Blocked: False
+2024-07-15 13:59:27,480 - root - INFO - Message: No rules matched
+2024-07-15 13:59:27,480 - root - INFO - Censor dict: {}
+2024-07-15 13:59:52,491 - root - INFO - Text analyzed:
+2024-07-15 13:59:52,491 - root - INFO - 3
+2024-07-15 13:59:52,491 - root - INFO - Received file: None, with content: 3 from 127.0.0.1 to 127.0.0.1
+2024-07-15 13:59:52,498 - root - INFO - Result:
+2024-07-15 13:59:52,498 - root - INFO - Blocked: False
+2024-07-15 13:59:52,498 - root - INFO - Message: No rules matched
+2024-07-15 13:59:52,498 - root - INFO - Censor dict: {}
+2024-07-15 14:00:17,508 - root - INFO - Text analyzed:
+2024-07-15 14:00:17,508 - root - INFO - 3
+2024-07-15 14:00:17,509 - root - INFO - Received file: None, with content: 3 from 127.0.0.1 to 127.0.0.1
+2024-07-15 14:00:17,516 - root - INFO - Result:
+2024-07-15 14:00:17,516 - root - INFO - Blocked: False
+2024-07-15 14:00:17,516 - root - INFO - Message: No rules matched
+2024-07-15 14:00:17,516 - root - INFO - Censor dict: {}
+2024-07-15 14:00:42,532 - root - INFO - Text analyzed:
+2024-07-15 14:00:42,533 - root - INFO - 3
+2024-07-15 14:00:42,533 - root - INFO - Received file: None, with content: 3 from 127.0.0.1 to 127.0.0.1
+2024-07-15 14:00:42,539 - root - INFO - Result:
+2024-07-15 14:00:42,539 - root - INFO - Blocked: False
+2024-07-15 14:00:42,539 - root - INFO - Message: No rules matched
+2024-07-15 14:00:42,539 - root - INFO - Censor dict: {}
+2024-07-15 14:01:07,549 - root - INFO - Text analyzed:
+2024-07-15 14:01:07,549 - root - INFO - 3
+2024-07-15 14:01:07,549 - root - INFO - Received file: None, with content: 3 from 127.0.0.1 to 127.0.0.1
+2024-07-15 14:01:07,556 - root - INFO - Result:
+2024-07-15 14:01:07,556 - root - INFO - Blocked: False
+2024-07-15 14:01:07,556 - root - INFO - Message: No rules matched
+2024-07-15 14:01:07,556 - root - INFO - Censor dict: {}
+2024-07-15 14:01:32,568 - root - INFO - Text analyzed:
+2024-07-15 14:01:32,569 - root - INFO - 3
+2024-07-15 14:01:32,569 - root - INFO - Received file: None, with content: 3 from 127.0.0.1 to 127.0.0.1
+2024-07-15 14:01:32,575 - root - INFO - Result:
+2024-07-15 14:01:32,575 - root - INFO - Blocked: False
+2024-07-15 14:01:32,575 - root - INFO - Message: No rules matched
+2024-07-15 14:01:32,576 - root - INFO - Censor dict: {}
+2024-07-15 14:01:57,599 - root - INFO - Text analyzed:
+2024-07-15 14:01:57,599 - root - INFO - 3
+2024-07-15 14:01:57,599 - root - INFO - Received file: None, with content: 3 from 127.0.0.1 to 127.0.0.1
+2024-07-15 14:01:57,606 - root - INFO - Result:
+2024-07-15 14:01:57,606 - root - INFO - Blocked: False
+2024-07-15 14:01:57,606 - root - INFO - Message: No rules matched
+2024-07-15 14:01:57,606 - root - INFO - Censor dict: {}
+2024-07-15 14:02:13,659 - root - INFO - Text analyzed:
+2024-07-15 14:02:13,659 - root - INFO - 1
+2024-07-15 14:02:13,659 - root - INFO - Received file: None, with content: 1 from 127.0.0.1 to 127.0.0.1
+2024-07-15 14:02:13,668 - root - INFO - Result:
+2024-07-15 14:02:13,668 - root - INFO - Blocked: False
+2024-07-15 14:02:13,668 - root - INFO - Message: No rules matched
+2024-07-15 14:02:13,668 - root - INFO - Censor dict: {}
+2024-07-15 14:05:28,745 - presidio-analyzer - INFO - Created NLP engine: spacy. Loaded models: ['es']
+2024-07-15 14:05:28,745 - presidio-analyzer - INFO - registry not provided, creating default.
+2024-07-15 14:05:28,745 - presidio-analyzer - INFO - Loaded recognizer: EsNifRecognizer
+2024-07-15 14:05:28,745 - presidio-analyzer - INFO - Loaded recognizer: CreditCardRecognizer
+2024-07-15 14:05:28,745 - presidio-analyzer - INFO - Loaded recognizer: CryptoRecognizer
+2024-07-15 14:05:28,745 - presidio-analyzer - INFO - Loaded recognizer: DateRecognizer
+2024-07-15 14:05:28,745 - presidio-analyzer - INFO - Loaded recognizer: EmailRecognizer
+2024-07-15 14:05:28,746 - presidio-analyzer - INFO - Loaded recognizer: IbanRecognizer
+2024-07-15 14:05:28,746 - presidio-analyzer - INFO - Loaded recognizer: IpRecognizer
+2024-07-15 14:05:28,746 - presidio-analyzer - INFO - Loaded recognizer: MedicalLicenseRecognizer
+2024-07-15 14:05:28,746 - presidio-analyzer - INFO - Loaded recognizer: PhoneRecognizer
+2024-07-15 14:05:28,746 - presidio-analyzer - INFO - Loaded recognizer: UrlRecognizer
+2024-07-15 14:05:28,746 - presidio-analyzer - INFO - Loaded recognizer: SpacyRecognizer
+2024-07-15 14:05:28,748 - presidio-analyzer - INFO - Loaded recognizer: PatternRecognizer
+2024-07-15 14:05:28,749 - presidio-analyzer - INFO - Loaded recognizer: PatternRecognizer
+2024-07-15 14:05:28,750 - presidio-analyzer - INFO - Loaded recognizer: PatternRecognizer
