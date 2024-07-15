@@ -11,13 +11,8 @@
 2. [Project Overview](#project-overview)
 3. [Features](#features)
 4. [Architecture](#architecture)
-5. [Installation](#installation)
-6. [Usage](#usage)
-7. [Configuration](#configuration)
-8. [Database Schema](#database-schema)
-9. [Contributing](#contributing)
-10. [License](#license)
-11. [Acknowledgements](#acknowledgements)
+5. [Configuration](#configuration)
+6. [Database Schema](#database-schema)
 
 ## Introduction
 
@@ -54,13 +49,6 @@ The system consists of several key components:
 4. **Database**: Stores configuration, rules, and logs
 5. **API** (not shown in the provided code, but recommended): For configuration and reporting
 
-## Installation
-
-[Provide step-by-step installation instructions here, including dependencies]
-
-## Usage
-
-[Provide instructions on how to start and use the system, including any command-line arguments or configuration files]
 
 ## Configuration
 
@@ -72,7 +60,6 @@ The system can be configured through the PostgreSQL database. Key configuration 
 - Network Segments
 - User Roles and Permissions
 
-[Provide more detailed instructions on how to configure each aspect]
 
 ## Database Schema
 
@@ -85,23 +72,4 @@ The PostgreSQL database includes the following key tables:
 - `users` and `roles`: User management and access control
 - `history`: Logs of DLP events
 
-[You may want to include an ER diagram or more detailed schema description]
 
-## Contributing
-
-[If applicable, provide guidelines for how others can contribute to the project]
-
-## License
-
-[Specify the license under which this project is released]
-
-## Acknowledgements
-
-- Pontificia Universidad Católica del Perú for supporting this research
-- [List any other individuals, organizations, or resources that contributed to the project]
-
----
-
-For more information, please contact [Your Contact Information].
-
-© [Year] [Your Name/Institution]. All Rights Reserved.
