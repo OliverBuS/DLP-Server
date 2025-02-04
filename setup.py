@@ -17,7 +17,7 @@ logging.basicConfig(
 
 class DLPContentAnalyzer(ContentAnalyzer):
     def __init__(self):
-        self.db = Database("127.0.0.1", "dlp", "oliver", "oliver")
+        self.db = Database("127.0.0.1", "dlp", "admin", "root")
         self.dlp = DLP(db=self.db)
 
     def analyze(

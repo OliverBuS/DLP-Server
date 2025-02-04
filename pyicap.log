@@ -647,3 +647,74 @@ protección de datos  from 127.0.0.1 to 127.0.0.1
 2024-07-15 14:05:28,748 - presidio-analyzer - INFO - Loaded recognizer: PatternRecognizer
 2024-07-15 14:05:28,749 - presidio-analyzer - INFO - Loaded recognizer: PatternRecognizer
 2024-07-15 14:05:28,750 - presidio-analyzer - INFO - Loaded recognizer: PatternRecognizer
+2025-02-03 23:32:20,878 - presidio-analyzer - WARNING - Model es_core_news_lg is not installed. Downloading...
+2025-02-03 23:32:53,623 - presidio-analyzer - WARNING - Model es_core_news_lg is not installed. Downloading...
+2025-02-03 23:33:05,315 - presidio-analyzer - WARNING - Model es_core_news_lg is not installed. Downloading...
+2025-02-03 23:43:15,875 - presidio-analyzer - WARNING - Model es_core_news_lg is not installed. Downloading...
+2025-02-03 23:45:03,375 - presidio-analyzer - WARNING - Model es_core_news_lg is not installed. Downloading...
+2025-02-03 23:46:22,896 - presidio-analyzer - INFO - Finished downloading model es_core_news_lg
+2025-02-03 23:46:25,538 - presidio-analyzer - INFO - Created NLP engine: spacy. Loaded models: ['es']
+2025-02-03 23:46:25,538 - presidio-analyzer - INFO - registry not provided, creating default.
+2025-02-03 23:46:25,606 - presidio-analyzer - INFO - Loaded recognizer: CreditCardRecognizer
+2025-02-03 23:46:25,606 - presidio-analyzer - INFO - Loaded recognizer: CreditCardRecognizer
+2025-02-03 23:46:25,606 - presidio-analyzer - INFO - Loaded recognizer: CreditCardRecognizer
+2025-02-03 23:46:25,606 - presidio-analyzer - INFO - Loaded recognizer: CreditCardRecognizer
+2025-02-03 23:46:25,607 - presidio-analyzer - INFO - Loaded recognizer: UsBankRecognizer
+2025-02-03 23:46:25,607 - presidio-analyzer - INFO - Loaded recognizer: UsLicenseRecognizer
+2025-02-03 23:46:25,607 - presidio-analyzer - INFO - Loaded recognizer: UsItinRecognizer
+2025-02-03 23:46:25,607 - presidio-analyzer - INFO - Loaded recognizer: UsPassportRecognizer
+2025-02-03 23:46:25,607 - presidio-analyzer - INFO - Loaded recognizer: UsSsnRecognizer
+2025-02-03 23:46:25,607 - presidio-analyzer - INFO - Loaded recognizer: NhsRecognizer
+2025-02-03 23:46:25,607 - presidio-analyzer - INFO - Loaded recognizer: UkNinoRecognizer
+2025-02-03 23:46:25,608 - presidio-analyzer - INFO - Loaded recognizer: SgFinRecognizer
+2025-02-03 23:46:25,608 - presidio-analyzer - INFO - Loaded recognizer: AuAbnRecognizer
+2025-02-03 23:46:25,608 - presidio-analyzer - INFO - Loaded recognizer: AuAcnRecognizer
+2025-02-03 23:46:25,608 - presidio-analyzer - INFO - Loaded recognizer: AuTfnRecognizer
+2025-02-03 23:46:25,608 - presidio-analyzer - INFO - Loaded recognizer: AuMedicareRecognizer
+2025-02-03 23:46:25,608 - presidio-analyzer - INFO - Loaded recognizer: InPanRecognizer
+2025-02-03 23:46:25,608 - presidio-analyzer - INFO - Loaded recognizer: InAadhaarRecognizer
+2025-02-03 23:46:25,608 - presidio-analyzer - INFO - Loaded recognizer: InVehicleRegistrationRecognizer
+2025-02-03 23:46:25,608 - presidio-analyzer - INFO - Loaded recognizer: InPassportRecognizer
+2025-02-03 23:46:25,608 - presidio-analyzer - INFO - Loaded recognizer: EsNifRecognizer
+2025-02-03 23:46:25,609 - presidio-analyzer - INFO - Loaded recognizer: EsNieRecognizer
+2025-02-03 23:46:25,609 - presidio-analyzer - INFO - Loaded recognizer: ItDriverLicenseRecognizer
+2025-02-03 23:46:25,609 - presidio-analyzer - INFO - Loaded recognizer: ItFiscalCodeRecognizer
+2025-02-03 23:46:25,609 - presidio-analyzer - INFO - Loaded recognizer: ItVatCodeRecognizer
+2025-02-03 23:46:25,609 - presidio-analyzer - INFO - Loaded recognizer: ItIdentityCardRecognizer
+2025-02-03 23:46:25,609 - presidio-analyzer - INFO - Loaded recognizer: ItPassportRecognizer
+2025-02-03 23:46:25,609 - presidio-analyzer - INFO - Loaded recognizer: PlPeselRecognizer
+2025-02-03 23:46:25,609 - presidio-analyzer - INFO - Loaded recognizer: CryptoRecognizer
+2025-02-03 23:46:25,609 - presidio-analyzer - INFO - Loaded recognizer: DateRecognizer
+2025-02-03 23:46:25,610 - presidio-analyzer - INFO - Loaded recognizer: EmailRecognizer
+2025-02-03 23:46:25,610 - presidio-analyzer - INFO - Loaded recognizer: IbanRecognizer
+2025-02-03 23:46:25,610 - presidio-analyzer - INFO - Loaded recognizer: IpRecognizer
+2025-02-03 23:46:25,610 - presidio-analyzer - INFO - Loaded recognizer: MedicalLicenseRecognizer
+2025-02-03 23:46:25,610 - presidio-analyzer - INFO - Loaded recognizer: PhoneRecognizer
+2025-02-03 23:46:25,610 - presidio-analyzer - INFO - Loaded recognizer: UrlRecognizer
+2025-02-03 23:46:25,610 - presidio-analyzer - INFO - Loaded recognizer: InVoterRecognizer
+2025-02-03 23:46:25,610 - presidio-analyzer - WARNING - Recognizer not added to registry because language is not supported by registry - CreditCardRecognizer supported languages: en, registry supported languages: es
+2025-02-03 23:46:25,610 - presidio-analyzer - WARNING - Recognizer not added to registry because language is not supported by registry - CreditCardRecognizer supported languages: it, registry supported languages: es
+2025-02-03 23:46:25,610 - presidio-analyzer - WARNING - Recognizer not added to registry because language is not supported by registry - CreditCardRecognizer supported languages: pl, registry supported languages: es
+2025-02-03 23:46:25,610 - presidio-analyzer - WARNING - Recognizer not added to registry because language is not supported by registry - UsBankRecognizer supported languages: en, registry supported languages: es
+2025-02-03 23:46:25,610 - presidio-analyzer - WARNING - Recognizer not added to registry because language is not supported by registry - UsLicenseRecognizer supported languages: en, registry supported languages: es
+2025-02-03 23:46:25,610 - presidio-analyzer - WARNING - Recognizer not added to registry because language is not supported by registry - UsItinRecognizer supported languages: en, registry supported languages: es
+2025-02-03 23:46:25,610 - presidio-analyzer - WARNING - Recognizer not added to registry because language is not supported by registry - UsPassportRecognizer supported languages: en, registry supported languages: es
+2025-02-03 23:46:25,610 - presidio-analyzer - WARNING - Recognizer not added to registry because language is not supported by registry - UsSsnRecognizer supported languages: en, registry supported languages: es
+2025-02-03 23:46:25,610 - presidio-analyzer - WARNING - Recognizer not added to registry because language is not supported by registry - NhsRecognizer supported languages: en, registry supported languages: es
+2025-02-03 23:46:25,610 - presidio-analyzer - WARNING - Recognizer not added to registry because language is not supported by registry - UkNinoRecognizer supported languages: en, registry supported languages: es
+2025-02-03 23:46:25,610 - presidio-analyzer - WARNING - Recognizer not added to registry because language is not supported by registry - SgFinRecognizer supported languages: en, registry supported languages: es
+2025-02-03 23:46:25,611 - presidio-analyzer - WARNING - Recognizer not added to registry because language is not supported by registry - AuAbnRecognizer supported languages: en, registry supported languages: es
+2025-02-03 23:46:25,611 - presidio-analyzer - WARNING - Recognizer not added to registry because language is not supported by registry - AuAcnRecognizer supported languages: en, registry supported languages: es
+2025-02-03 23:46:25,611 - presidio-analyzer - WARNING - Recognizer not added to registry because language is not supported by registry - AuTfnRecognizer supported languages: en, registry supported languages: es
+2025-02-03 23:46:25,611 - presidio-analyzer - WARNING - Recognizer not added to registry because language is not supported by registry - AuMedicareRecognizer supported languages: en, registry supported languages: es
+2025-02-03 23:46:25,611 - presidio-analyzer - WARNING - Recognizer not added to registry because language is not supported by registry - InPanRecognizer supported languages: en, registry supported languages: es
+2025-02-03 23:46:25,611 - presidio-analyzer - WARNING - Recognizer not added to registry because language is not supported by registry - InAadhaarRecognizer supported languages: en, registry supported languages: es
+2025-02-03 23:46:25,611 - presidio-analyzer - WARNING - Recognizer not added to registry because language is not supported by registry - InVehicleRegistrationRecognizer supported languages: en, registry supported languages: es
+2025-02-03 23:46:25,611 - presidio-analyzer - WARNING - Recognizer not added to registry because language is not supported by registry - InPassportRecognizer supported languages: en, registry supported languages: es
+2025-02-03 23:46:25,611 - presidio-analyzer - WARNING - Recognizer not added to registry because language is not supported by registry - ItDriverLicenseRecognizer supported languages: it, registry supported languages: es
+2025-02-03 23:46:25,611 - presidio-analyzer - WARNING - Recognizer not added to registry because language is not supported by registry - ItFiscalCodeRecognizer supported languages: it, registry supported languages: es
+2025-02-03 23:46:25,611 - presidio-analyzer - WARNING - Recognizer not added to registry because language is not supported by registry - ItVatCodeRecognizer supported languages: it, registry supported languages: es
+2025-02-03 23:46:25,611 - presidio-analyzer - WARNING - Recognizer not added to registry because language is not supported by registry - ItIdentityCardRecognizer supported languages: it, registry supported languages: es
+2025-02-03 23:46:25,611 - presidio-analyzer - WARNING - Recognizer not added to registry because language is not supported by registry - ItPassportRecognizer supported languages: it, registry supported languages: es
+2025-02-03 23:46:25,611 - presidio-analyzer - WARNING - Recognizer not added to registry because language is not supported by registry - PlPeselRecognizer supported languages: pl, registry supported languages: es
+2025-02-03 23:46:25,611 - presidio-analyzer - INFO - Loaded recognizer: SpacyRecognizer
